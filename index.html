@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <title>Selective Attention Test</title>
+  </head>
+  <body>
+    <div id="use_comp">Website will open only on computers</div>
+    <div id="all_other">
+      <div id="banner">
+        <p id="banner_text">
+          Selective Attention Test <br />
+          Quetions : 30 <br />
+          Time : 8 minutes
+        </p>
+        <img src="./banner.jpg" alt="banner" />
+      </div>
+
+      <div id="main">
+        <div id="btn">
+          <button
+            id="submit"
+            type="button"
+            class="btn submit"
+            onclick="submit_test()"
+          >
+            Submit
+          </button>
+          <button
+            type="button"
+            class="btn restart"
+            onClick="document.location.reload(true)"
+          >
+            Restart
+          </button>
+        </div>
+        <div class="score">
+          <span id="score_text">::SCORE::</span><br />
+          <span id="score"></span>
+        </div>
+      </div>
+      <div id="start">
+        <button type="button" class="btn start" onClick="start_test()">
+          Start
+        </button>
+      </div>
+    </div>
+
+    <span id="timer"></span>
+    <script src="script.js"></script>
+  </body>
+</html>
